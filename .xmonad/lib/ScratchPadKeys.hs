@@ -1,0 +1,19 @@
+import ScratchPadKeys
+ import XMonad.Util.EZConfig (additionalKeysP)
+
+ main :: IO ()
+ main = xmonad $ defaultConfig
+    { ...
+    , manageHook = myManageHook
+    , ...
+    } `additionalKeysP` myKeys
+
+ myManageHook :: ManageHook
+ myManageHook = [ ...
+                , ...
+                ] <+> manageScratchPads scratchPadList
+
+ myKeys :: [(String, X())]
+ myKeys = [ ...
+          , ...
+          ] ++ scratchPadKeys scratchPadList

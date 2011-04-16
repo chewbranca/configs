@@ -1,0 +1,127 @@
+! ----------------------------------------------------------------------------
+! file:     ~/.Xdefaults
+! author:   Thayer Williams - http://cinderwick.ca
+! modified: June 2009
+! vim:enc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+! ----------------------------------------------------------------------------
+
+! Xcursor --------------------------------------------------------------------
+
+#Xcursor*theme:  Vanilla-DMZ-AA
+Xcursor*theme:	pCircle-24
+#Xcursor.size:   22
+
+
+! terminal colors ------------------------------------------------------------
+
+! A tango-esque light theme
+
+*foreground:#a0a0a0
+*background:#1B1D1E
+
+!black
+*color0:    #1B1D1E
+*color8:    #505354
+!red
+*color1:    #F92672
+*color9:    #FF669D
+!green
+*color2:    #A6E22E
+*color10:   #BEED5F
+!yellow
+*color3:    #FD971F
+*color11:   #E6DB74
+!blue
+*color4:    #66D9EF
+*color12:   #66D9EF
+!magenta
+*color5:    #9E6FFE
+*color13:   #9E6FFE
+!cyan
+*color6:    #5E7175
+*color14:   #A3BABF
+!white
+*color7:    #CCCCC6
+*color15:   #F8F8F2
+
+
+! rxvt-unicode ---------------------------------------------------------------
+
+!for normal X11 fonts:
+#*font:     -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+#*boldFont: -*terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+!urxvt*font:     -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+!rxvt*boldFont:  -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+
+
+URxvt.font:	xft:Terminus:pixelsize=14:antialias:true
+URxvt.boldFont:	xft:Terminus:bold:pixelsize=14:antialias:true
+
+#urxvt*geometry:         105x30
+urxvt*depth:            24
+#urxvt*transparent:      true
+urxvt*internalBorder:   2
+urxvt*fading:           0
+urxvt*shading:          10
+urxvt*tintColor:        #000000
+urxvt*cursorColor:      #FD971F
+urxvt*inheritPixmap:    false
+urxvt*saveLines:        32767
+#urxvt*visualBell:       true
+urxvt*scrollTtyKeypress:true
+urxvt*scrollWithBuffer: false
+urxvt*scrollTtyOutput:  false
+urxvt*scrollBar:        false
+urxvt*loginShell:       true
+urxvt*cutchars:         "()*,<>[]{}|'
+urxvt*print-pipe:       cat > $(echo urxvt.dump.$(date +'%Y%M%d%H%m%S'))
+urxvt*secondaryScroll:  true
+urxvt*mapAlert:         true
+urxvt*utmpInhibit:      true
+urxvt*perl-lib:         /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:  option-popup,matcher
+urxvt*urlLauncher:      /usr/bin/chromium
+urxvt*matcher.button:   1
+!urxvt*background:      rgba:2222/2222/2222/dddd
+
+
+#aterm*tinting:#ffffff
+#aterm*transparent:false
+#aterm*shading:40
+#aterm*scrollBar:false
+#aterm*fade: 60
+#aterm*geometry:85x30
+#aterm*truetintingType:True
+
+
+
+! xterm ----------------------------------------------------------------------
+
+#xterm*font:             -*-terminus-medium-r-*-*-15-*-*-*-*-*-*-*
+#xterm*boldFont:         -*-terminus-medium-r-*-*-15-*-*-*-*-*-*-*
+#xterm*dynamicColors:    true
+#xterm*utf8:             2
+#xterm*eightBitInput:    true
+#xterm*saveLines:        32767
+#xterm*scrollTtyKeypress:true
+#xterm*scrollTtyOutput:  false
+#xterm*scrollBar:        false
+#xterm*jumpScroll:       true
+#xterm*multiScroll:      true
+#xterm*toolBar:          false
+#xterm*loginShell:       true
+#xterm*metaSendsEscape:  true
+
+
+! x11-ssh-askpass ------------------------------------------------------------
+
+#x11-ssh-askpass*font:                   -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+#x11-ssh-askpass*background:             #000000
+#x11-ssh-askpass*foreground:             #ffffff
+#x11-ssh-askpass.Button*background:      #000000
+#x11-ssh-askpass.Indicator*foreground:   #ff9900
+#x11-ssh-askpass.Indicator*background:   #0a0a0a
+#x11-ssh-askpass*topShadowColor:         #000000
+#x11-ssh-askpass*bottomShadowColor:      #000000
+! ----------------------------------------------------------------------------
+! file:     ~/.Xdefaults
